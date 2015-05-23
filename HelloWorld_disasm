@@ -1,0 +1,91 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/HelloWorld$.class
+  Last modified 2015/05/23; size 598 bytes
+  MD5 checksum b1d052a0e13b1a61295f0fdd77483797
+  Compiled from "HelloWorld.scala"
+public final class HelloWorld$
+  SourceFile: "HelloWorld.scala"
+    Scala: length = 0x0
+     
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               HelloWorld$
+   #2 = Class              #1             //  HelloWorld$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             //  java/lang/Object
+   #5 = Utf8               HelloWorld.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LHelloWorld$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         //  "<init>":()V
+  #12 = Methodref          #2.#11         //  HelloWorld$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               scala/Predef$
+  #16 = Class              #15            //  scala/Predef$
+  #17 = Utf8               Lscala/Predef$;
+  #18 = NameAndType        #6:#17         //  MODULE$:Lscala/Predef$;
+  #19 = Fieldref           #16.#18        //  scala/Predef$.MODULE$:Lscala/Predef$;
+  #20 = Utf8               hello, world
+  #21 = String             #20            //  hello, world
+  #22 = Utf8               println
+  #23 = Utf8               (Ljava/lang/Object;)V
+  #24 = NameAndType        #22:#23        //  println:(Ljava/lang/Object;)V
+  #25 = Methodref          #16.#24        //  scala/Predef$.println:(Ljava/lang/Object;)V
+  #26 = Utf8               this
+  #27 = Utf8               args
+  #28 = Utf8               [Ljava/lang/String;
+  #29 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #30 = NameAndType        #6:#7          //  MODULE$:LHelloWorld$;
+  #31 = Fieldref           #2.#30         //  HelloWorld$.MODULE$:LHelloWorld$;
+  #32 = Utf8               Code
+  #33 = Utf8               LocalVariableTable
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               SourceFile
+  #36 = Utf8               Scala
+{
+  public static final HelloWorld$ MODULE$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+
+  public static {};
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class HelloWorld$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return        
+
+  public void main(java.lang.String[]);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         3: ldc           #21                 // String hello, world
+         5: invokevirtual #25                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+         8: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       9     0  this   LHelloWorld$;
+               0       9     1  args   [Ljava/lang/String;
+      LineNumberTable:
+        line 3: 0
+
+  private HelloWorld$();
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #29                 // Method java/lang/Object."<init>":()V
+         4: aload_0       
+         5: putstatic     #31                 // Field MODULE$:LHelloWorld$;
+         8: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       9     0  this   LHelloWorld$;
+      LineNumberTable:
+        line 5: 0
+}
