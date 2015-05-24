@@ -1,6 +1,6 @@
 import scala.Predef.;
 
-public final class HelloWorld$
+public final class HelloWorldScala$
 {
   public static final  MODULE$;
   
@@ -14,7 +14,7 @@ public final class HelloWorld$
     Predef..MODULE$.println("hello, world");
   }
   
-  private HelloWorld$()
+  private HelloWorldScala$()
   {
     MODULE$ = this;
   }
