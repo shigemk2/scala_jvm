@@ -1,0 +1,22 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/Interface.class
+  Last modified 2015/05/24; size 179 bytes
+  MD5 checksum 117685a32c4bd497627863320c1f544c
+  Compiled from "InterfaceJava.java"
+interface Interface
+  SourceFile: "InterfaceJava.java"
+  minor version: 0
+  major version: 51
+  flags: ACC_INTERFACE, ACC_ABSTRACT
+Constant pool:
+  #1 = Class              #7              //  Interface
+  #2 = Class              #8              //  java/lang/Object
+  #3 = Utf8               method
+  #4 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #5 = Utf8               SourceFile
+  #6 = Utf8               InterfaceJava.java
+  #7 = Utf8               Interface
+  #8 = Utf8               java/lang/Object
+{
+  public abstract java.lang.String method(java.lang.String, java.lang.String);
+    flags: ACC_PUBLIC, ACC_ABSTRACT
+}
