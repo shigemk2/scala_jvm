@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FILE_NAME=`echo $1 | sed s/.scala//g`
+scalac $1
+javap -v -p -c $FILE_NAME"\$"
