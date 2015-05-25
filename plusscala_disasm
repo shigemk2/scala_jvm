@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/PlusScala$.class
-  Last modified 2015/05/24; size 693 bytes
-  MD5 checksum 39511ff6b18d7ec8fe36a7d827b05702
+  Last modified 2015/05/24; size 506 bytes
+  MD5 checksum a85a48501cfdfba3570deeaa48cf4d6e
   Compiled from "PlusScala.scala"
 public final class PlusScala$
   SourceFile: "PlusScala.scala"
@@ -24,34 +24,19 @@ Constant pool:
   #12 = Methodref          #2.#11         //  PlusScala$."<init>":()V
   #13 = Utf8               main
   #14 = Utf8               ([Ljava/lang/String;)V
-  #15 = Utf8               scala/Predef$
-  #16 = Class              #15            //  scala/Predef$
-  #17 = Utf8               Lscala/Predef$;
-  #18 = NameAndType        #6:#17         //  MODULE$:Lscala/Predef$;
-  #19 = Fieldref           #16.#18        //  scala/Predef$.MODULE$:Lscala/Predef$;
-  #20 = Utf8               scala/runtime/BoxesRunTime
-  #21 = Class              #20            //  scala/runtime/BoxesRunTime
-  #22 = Utf8               boxToInteger
-  #23 = Utf8               (I)Ljava/lang/Integer;
-  #24 = NameAndType        #22:#23        //  boxToInteger:(I)Ljava/lang/Integer;
-  #25 = Methodref          #21.#24        //  scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-  #26 = Utf8               println
-  #27 = Utf8               (Ljava/lang/Object;)V
-  #28 = NameAndType        #26:#27        //  println:(Ljava/lang/Object;)V
-  #29 = Methodref          #16.#28        //  scala/Predef$.println:(Ljava/lang/Object;)V
-  #30 = Utf8               this
-  #31 = Utf8               args
-  #32 = Utf8               [Ljava/lang/String;
-  #33 = Utf8               a
-  #34 = Utf8               I
-  #35 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #36 = NameAndType        #6:#7          //  MODULE$:LPlusScala$;
-  #37 = Fieldref           #2.#36         //  PlusScala$.MODULE$:LPlusScala$;
-  #38 = Utf8               Code
-  #39 = Utf8               LocalVariableTable
-  #40 = Utf8               LineNumberTable
-  #41 = Utf8               SourceFile
-  #42 = Utf8               Scala
+  #15 = Utf8               this
+  #16 = Utf8               args
+  #17 = Utf8               [Ljava/lang/String;
+  #18 = Utf8               a
+  #19 = Utf8               I
+  #20 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #21 = NameAndType        #6:#7          //  MODULE$:LPlusScala$;
+  #22 = Fieldref           #2.#21         //  PlusScala$.MODULE$:LPlusScala$;
+  #23 = Utf8               Code
+  #24 = Utf8               LocalVariableTable
+  #25 = Utf8               LineNumberTable
+  #26 = Utf8               SourceFile
+  #27 = Utf8               Scala
 {
   public static final PlusScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -75,33 +60,28 @@ Constant pool:
          3: iconst_2      
          4: iadd          
          5: istore_2      
-         6: getstatic     #19                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-         9: iload_2       
-        10: invokestatic  #25                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-        13: invokevirtual #29                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-        16: return        
+         6: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-               0      17     0  this   LPlusScala$;
-               0      17     1  args   [Ljava/lang/String;
-               2      14     2     a   I
+               0       7     0  this   LPlusScala$;
+               0       7     1  args   [Ljava/lang/String;
+               2       4     2     a   I
       LineNumberTable:
         line 3: 0
         line 4: 2
-        line 5: 6
 
   private PlusScala$();
     flags: ACC_PRIVATE
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #20                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #37                 // Field MODULE$:LPlusScala$;
+         5: putstatic     #22                 // Field MODULE$:LPlusScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0       9     0  this   LPlusScala$;
       LineNumberTable:
-        line 7: 0
+        line 6: 0
 }
