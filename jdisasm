@@ -1,5 +1,5 @@
 #!/bin/bash
 
 FILE_NAME=`echo $1 | sed s/.java//g`
-javac $1
+javac -g $1
 javap -v -p -c $FILE_NAME
