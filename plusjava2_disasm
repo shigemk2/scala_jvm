@@ -1,0 +1,87 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/PlusJava2.class
+  Last modified 2015/05/26; size 501 bytes
+  MD5 checksum 08e484979e18ebfb32d7f05cff5a352f
+  Compiled from "PlusJava2.java"
+public class PlusJava2
+  SourceFile: "PlusJava2.java"
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #3.#20         //  java/lang/Object."<init>":()V
+   #2 = Class              #21            //  PlusJava2
+   #3 = Class              #22            //  java/lang/Object
+   #4 = Utf8               <init>
+   #5 = Utf8               ()V
+   #6 = Utf8               Code
+   #7 = Utf8               LineNumberTable
+   #8 = Utf8               LocalVariableTable
+   #9 = Utf8               this
+  #10 = Utf8               LPlusJava2;
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               args
+  #14 = Utf8               [Ljava/lang/String;
+  #15 = Utf8               a
+  #16 = Utf8               I
+  #17 = Utf8               main1
+  #18 = Utf8               SourceFile
+  #19 = Utf8               PlusJava2.java
+  #20 = NameAndType        #4:#5          //  "<init>":()V
+  #21 = Utf8               PlusJava2
+  #22 = Utf8               java/lang/Object
+{
+  public PlusJava2();
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return        
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       5     0  this   LPlusJava2;
+
+  public static void main(java.lang.String[]);
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_1      
+         1: istore_1      
+         2: iload_1       
+         3: iconst_2      
+         4: iadd          
+         5: istore_1      
+         6: return        
+      LineNumberTable:
+        line 3: 0
+        line 4: 2
+        line 5: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       7     0  args   [Ljava/lang/String;
+               2       5     1     a   I
+
+  public void main1(java.lang.String[]);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: iconst_1      
+         1: istore_2      
+         2: iload_2       
+         3: iconst_2      
+         4: iadd          
+         5: istore_2      
+         6: return        
+      LineNumberTable:
+        line 7: 0
+        line 8: 2
+        line 9: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       7     0  this   LPlusJava2;
+               0       7     1  args   [Ljava/lang/String;
+               2       5     2     a   I
+}
