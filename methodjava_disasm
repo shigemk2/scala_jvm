@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/MethodJava.class
-  Last modified 2015/05/24; size 465 bytes
-  MD5 checksum 55cca680519738909dd37c0fc94cbb11
+  Last modified 2015/05/26; size 609 bytes
+  MD5 checksum df21614dc2e19ddffba1e228ab643474
   Compiled from "MethodJava.java"
 public class MethodJava
   SourceFile: "MethodJava.java"
@@ -8,36 +8,43 @@ public class MethodJava
   major version: 51
   flags: ACC_PUBLIC, ACC_SUPER
 Constant pool:
-   #1 = Methodref          #6.#17         //  java/lang/Object."<init>":()V
-   #2 = Fieldref           #18.#19        //  java/lang/System.out:Ljava/io/PrintStream;
-   #3 = Methodref          #5.#20         //  MethodJava.method:(I)I
-   #4 = Methodref          #21.#22        //  java/io/PrintStream.println:(I)V
-   #5 = Class              #23            //  MethodJava
-   #6 = Class              #24            //  java/lang/Object
+   #1 = Methodref          #6.#24         //  java/lang/Object."<init>":()V
+   #2 = Fieldref           #25.#26        //  java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Methodref          #5.#27         //  MethodJava.method:(I)I
+   #4 = Methodref          #28.#29        //  java/io/PrintStream.println:(I)V
+   #5 = Class              #30            //  MethodJava
+   #6 = Class              #31            //  java/lang/Object
    #7 = Utf8               <init>
    #8 = Utf8               ()V
    #9 = Utf8               Code
   #10 = Utf8               LineNumberTable
-  #11 = Utf8               method
-  #12 = Utf8               (I)I
-  #13 = Utf8               main
-  #14 = Utf8               ([Ljava/lang/String;)V
-  #15 = Utf8               SourceFile
-  #16 = Utf8               MethodJava.java
-  #17 = NameAndType        #7:#8          //  "<init>":()V
-  #18 = Class              #25            //  java/lang/System
-  #19 = NameAndType        #26:#27        //  out:Ljava/io/PrintStream;
-  #20 = NameAndType        #11:#12        //  method:(I)I
-  #21 = Class              #28            //  java/io/PrintStream
-  #22 = NameAndType        #29:#30        //  println:(I)V
-  #23 = Utf8               MethodJava
-  #24 = Utf8               java/lang/Object
-  #25 = Utf8               java/lang/System
-  #26 = Utf8               out
-  #27 = Utf8               Ljava/io/PrintStream;
-  #28 = Utf8               java/io/PrintStream
-  #29 = Utf8               println
-  #30 = Utf8               (I)V
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               LMethodJava;
+  #14 = Utf8               method
+  #15 = Utf8               (I)I
+  #16 = Utf8               a
+  #17 = Utf8               I
+  #18 = Utf8               main
+  #19 = Utf8               ([Ljava/lang/String;)V
+  #20 = Utf8               args
+  #21 = Utf8               [Ljava/lang/String;
+  #22 = Utf8               SourceFile
+  #23 = Utf8               MethodJava.java
+  #24 = NameAndType        #7:#8          //  "<init>":()V
+  #25 = Class              #32            //  java/lang/System
+  #26 = NameAndType        #33:#34        //  out:Ljava/io/PrintStream;
+  #27 = NameAndType        #14:#15        //  method:(I)I
+  #28 = Class              #35            //  java/io/PrintStream
+  #29 = NameAndType        #36:#37        //  println:(I)V
+  #30 = Utf8               MethodJava
+  #31 = Utf8               java/lang/Object
+  #32 = Utf8               java/lang/System
+  #33 = Utf8               out
+  #34 = Utf8               Ljava/io/PrintStream;
+  #35 = Utf8               java/io/PrintStream
+  #36 = Utf8               println
+  #37 = Utf8               (I)V
 {
   public MethodJava();
     flags: ACC_PUBLIC
@@ -48,6 +55,9 @@ Constant pool:
          4: return        
       LineNumberTable:
         line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       5     0  this   LMethodJava;
 
   public static int method(int);
     flags: ACC_PUBLIC, ACC_STATIC
@@ -57,6 +67,9 @@ Constant pool:
          1: ireturn       
       LineNumberTable:
         line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       2     0     a   I
 
   public static void main(java.lang.String[]);
     flags: ACC_PUBLIC, ACC_STATIC
@@ -73,4 +86,8 @@ Constant pool:
         line 7: 0
         line 8: 2
         line 9: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0      13     0  args   [Ljava/lang/String;
+               2      11     1     a   I
 }
