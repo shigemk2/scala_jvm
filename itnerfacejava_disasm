@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/InterfaceJava.class
-  Last modified 2015/05/24; size 748 bytes
-  MD5 checksum 11c340982ee38526e6fbe70498b78415
+  Last modified 2015/05/27; size 928 bytes
+  MD5 checksum 1e27cbb28c7c2256d4f38e0085bdb524
   Compiled from "InterfaceJava.java"
 public class InterfaceJava implements Interface
   SourceFile: "InterfaceJava.java"
@@ -8,54 +8,60 @@ public class InterfaceJava implements Interface
   major version: 51
   flags: ACC_PUBLIC, ACC_SUPER
 Constant pool:
-   #1 = Methodref          #13.#25        //  java/lang/Object."<init>":()V
-   #2 = Class              #26            //  java/lang/StringBuilder
-   #3 = Methodref          #2.#25         //  java/lang/StringBuilder."<init>":()V
-   #4 = Methodref          #2.#27         //  java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-   #5 = Methodref          #2.#28         //  java/lang/StringBuilder.toString:()Ljava/lang/String;
-   #6 = Class              #29            //  InterfaceJava
-   #7 = Methodref          #6.#25         //  InterfaceJava."<init>":()V
-   #8 = Fieldref           #30.#31        //  java/lang/System.out:Ljava/io/PrintStream;
-   #9 = String             #32            //  a
-  #10 = String             #33            //  b
-  #11 = Methodref          #6.#34         //  InterfaceJava.method:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-  #12 = Methodref          #35.#36        //  java/io/PrintStream.println:(Ljava/lang/String;)V
-  #13 = Class              #37            //  java/lang/Object
-  #14 = Class              #38            //  Interface
+   #1 = Methodref          #13.#33        //  java/lang/Object."<init>":()V
+   #2 = Class              #34            //  java/lang/StringBuilder
+   #3 = Methodref          #2.#33         //  java/lang/StringBuilder."<init>":()V
+   #4 = Methodref          #2.#35         //  java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #5 = Methodref          #2.#36         //  java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #6 = Class              #37            //  InterfaceJava
+   #7 = Methodref          #6.#33         //  InterfaceJava."<init>":()V
+   #8 = Fieldref           #38.#39        //  java/lang/System.out:Ljava/io/PrintStream;
+   #9 = String             #24            //  a
+  #10 = String             #26            //  b
+  #11 = Methodref          #6.#40         //  InterfaceJava.method:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #12 = Methodref          #41.#42        //  java/io/PrintStream.println:(Ljava/lang/String;)V
+  #13 = Class              #43            //  java/lang/Object
+  #14 = Class              #44            //  Interface
   #15 = Utf8               <init>
   #16 = Utf8               ()V
   #17 = Utf8               Code
   #18 = Utf8               LineNumberTable
-  #19 = Utf8               method
-  #20 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-  #21 = Utf8               main
-  #22 = Utf8               ([Ljava/lang/String;)V
-  #23 = Utf8               SourceFile
-  #24 = Utf8               InterfaceJava.java
-  #25 = NameAndType        #15:#16        //  "<init>":()V
-  #26 = Utf8               java/lang/StringBuilder
-  #27 = NameAndType        #39:#40        //  append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
-  #28 = NameAndType        #41:#42        //  toString:()Ljava/lang/String;
-  #29 = Utf8               InterfaceJava
-  #30 = Class              #43            //  java/lang/System
-  #31 = NameAndType        #44:#45        //  out:Ljava/io/PrintStream;
-  #32 = Utf8               a
-  #33 = Utf8               b
-  #34 = NameAndType        #19:#20        //  method:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-  #35 = Class              #46            //  java/io/PrintStream
-  #36 = NameAndType        #47:#48        //  println:(Ljava/lang/String;)V
-  #37 = Utf8               java/lang/Object
-  #38 = Utf8               Interface
-  #39 = Utf8               append
-  #40 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
-  #41 = Utf8               toString
-  #42 = Utf8               ()Ljava/lang/String;
-  #43 = Utf8               java/lang/System
-  #44 = Utf8               out
-  #45 = Utf8               Ljava/io/PrintStream;
-  #46 = Utf8               java/io/PrintStream
-  #47 = Utf8               println
-  #48 = Utf8               (Ljava/lang/String;)V
+  #19 = Utf8               LocalVariableTable
+  #20 = Utf8               this
+  #21 = Utf8               LInterfaceJava;
+  #22 = Utf8               method
+  #23 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #24 = Utf8               a
+  #25 = Utf8               Ljava/lang/String;
+  #26 = Utf8               b
+  #27 = Utf8               main
+  #28 = Utf8               ([Ljava/lang/String;)V
+  #29 = Utf8               args
+  #30 = Utf8               [Ljava/lang/String;
+  #31 = Utf8               SourceFile
+  #32 = Utf8               InterfaceJava.java
+  #33 = NameAndType        #15:#16        //  "<init>":()V
+  #34 = Utf8               java/lang/StringBuilder
+  #35 = NameAndType        #45:#46        //  append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #36 = NameAndType        #47:#48        //  toString:()Ljava/lang/String;
+  #37 = Utf8               InterfaceJava
+  #38 = Class              #49            //  java/lang/System
+  #39 = NameAndType        #50:#51        //  out:Ljava/io/PrintStream;
+  #40 = NameAndType        #22:#23        //  method:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #41 = Class              #52            //  java/io/PrintStream
+  #42 = NameAndType        #53:#54        //  println:(Ljava/lang/String;)V
+  #43 = Utf8               java/lang/Object
+  #44 = Utf8               Interface
+  #45 = Utf8               append
+  #46 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #47 = Utf8               toString
+  #48 = Utf8               ()Ljava/lang/String;
+  #49 = Utf8               java/lang/System
+  #50 = Utf8               out
+  #51 = Utf8               Ljava/io/PrintStream;
+  #52 = Utf8               java/io/PrintStream
+  #53 = Utf8               println
+  #54 = Utf8               (Ljava/lang/String;)V
 {
   public InterfaceJava();
     flags: ACC_PUBLIC
@@ -66,6 +72,9 @@ Constant pool:
          4: return        
       LineNumberTable:
         line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       5     0  this   LInterfaceJava;
 
   public java.lang.String method(java.lang.String, java.lang.String);
     flags: ACC_PUBLIC
@@ -82,6 +91,11 @@ Constant pool:
         18: areturn       
       LineNumberTable:
         line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0      19     0  this   LInterfaceJava;
+               0      19     1     a   Ljava/lang/String;
+               0      19     2     b   Ljava/lang/String;
 
   public static void main(java.lang.String[]);
     flags: ACC_PUBLIC, ACC_STATIC
@@ -102,4 +116,8 @@ Constant pool:
         line 11: 0
         line 12: 8
         line 13: 22
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0      23     0  args   [Ljava/lang/String;
+               8      15     1     a   LInterfaceJava;
 }
