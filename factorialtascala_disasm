@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/FactorialTAScala$.class
-  Last modified 2015/05/24; size 950 bytes
-  MD5 checksum 4295ae9235e4712550874d7aa33b8758
+  Last modified 2015/05/31; size 769 bytes
+  MD5 checksum 78cb69b22771bb54fbb8940f28e529df
   Compiled from "FactorialTAScala.scala"
 public final class FactorialTAScala$
   SourceFile: "FactorialTAScala.scala"
@@ -33,35 +33,20 @@ Constant pool:
   #21 = Utf8               I
   #22 = Utf8               main
   #23 = Utf8               ([Ljava/lang/String;)V
-  #24 = Utf8               scala/Predef$
-  #25 = Class              #24            //  scala/Predef$
-  #26 = Utf8               Lscala/Predef$;
-  #27 = NameAndType        #6:#26         //  MODULE$:Lscala/Predef$;
-  #28 = Fieldref           #25.#27        //  scala/Predef$.MODULE$:Lscala/Predef$;
-  #29 = NameAndType        #13:#14        //  fact:(I)I
-  #30 = Methodref          #2.#29         //  FactorialTAScala$.fact:(I)I
-  #31 = Utf8               scala/runtime/BoxesRunTime
-  #32 = Class              #31            //  scala/runtime/BoxesRunTime
-  #33 = Utf8               boxToInteger
-  #34 = Utf8               (I)Ljava/lang/Integer;
-  #35 = NameAndType        #33:#34        //  boxToInteger:(I)Ljava/lang/Integer;
-  #36 = Methodref          #32.#35        //  scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-  #37 = Utf8               println
-  #38 = Utf8               (Ljava/lang/Object;)V
-  #39 = NameAndType        #37:#38        //  println:(Ljava/lang/Object;)V
-  #40 = Methodref          #25.#39        //  scala/Predef$.println:(Ljava/lang/Object;)V
-  #41 = Utf8               args
-  #42 = Utf8               [Ljava/lang/String;
-  #43 = Utf8               acc
-  #44 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #45 = NameAndType        #6:#7          //  MODULE$:LFactorialTAScala$;
-  #46 = Fieldref           #2.#45         //  FactorialTAScala$.MODULE$:LFactorialTAScala$;
-  #47 = Utf8               Code
-  #48 = Utf8               LocalVariableTable
-  #49 = Utf8               LineNumberTable
-  #50 = Utf8               StackMapTable
-  #51 = Utf8               SourceFile
-  #52 = Utf8               Scala
+  #24 = NameAndType        #13:#14        //  fact:(I)I
+  #25 = Methodref          #2.#24         //  FactorialTAScala$.fact:(I)I
+  #26 = Utf8               args
+  #27 = Utf8               [Ljava/lang/String;
+  #28 = Utf8               acc
+  #29 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #30 = NameAndType        #6:#7          //  MODULE$:LFactorialTAScala$;
+  #31 = Fieldref           #2.#30         //  FactorialTAScala$.MODULE$:LFactorialTAScala$;
+  #32 = Utf8               Code
+  #33 = Utf8               LocalVariableTable
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               StackMapTable
+  #36 = Utf8               SourceFile
+  #37 = Utf8               Scala
 {
   public static final FactorialTAScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -79,35 +64,33 @@ Constant pool:
     flags: ACC_PUBLIC
     Code:
       stack=3, locals=2, args_size=2
-         0: aload_0       
-         1: iload_1       
-         2: iconst_1      
-         3: invokespecial #18                 // Method go$1:(II)I
-         6: ireturn       
+0: aload_0       
+1: iload_1       
+2: iconst_1      
+3: invokespecial #18                 // Method go$1:(II)I
+6: ireturn       
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0       7     0  this   LFactorialTAScala$;
                0       7     1     n   I
       LineNumberTable:
-        line 7: 0
+        line 6: 0
 
   public void main(java.lang.String[]);
     flags: ACC_PUBLIC
     Code:
-      stack=3, locals=2, args_size=2
-         0: getstatic     #28                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-         3: aload_0       
-         4: iconst_5      
-         5: invokevirtual #30                 // Method fact:(I)I
-         8: invokestatic  #36                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-        11: invokevirtual #40                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-        14: return        
+      stack=2, locals=2, args_size=2
+         0: aload_0       
+         1: iconst_5      
+         2: invokevirtual #25                 // Method fact:(I)I
+         5: pop           
+         6: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-               0      15     0  this   LFactorialTAScala$;
-               0      15     1  args   [Ljava/lang/String;
+               0       7     0  this   LFactorialTAScala$;
+               0       7     1  args   [Ljava/lang/String;
       LineNumberTable:
-        line 11: 0
+        line 10: 0
 
   private final int go$1(int, int);
     flags: ACC_PRIVATE, ACC_FINAL
@@ -146,13 +129,13 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #29                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #46                 // Field MODULE$:LFactorialTAScala$;
+         5: putstatic     #31                 // Field MODULE$:LFactorialTAScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0       9     0  this   LFactorialTAScala$;
       LineNumberTable:
-        line 13: 0
+        line 12: 0
 }

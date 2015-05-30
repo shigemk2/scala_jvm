@@ -7,6 +7,6 @@ object FactorialTAScala {
   }
 
   def main(args: Array[String]) :Unit = {
-    println(fact(5))
+    fact(5)
   }
 }
