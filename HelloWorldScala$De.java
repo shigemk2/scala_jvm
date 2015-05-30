@@ -1,21 +1,13 @@
 import scala.Predef.;
-
-public final class HelloWorldScala$
-{
+public final class HelloWorldScala$ {
   public static final  MODULE$;
-  
-  static
-  {
+  static {
     new ();
   }
-  
-  public void main(String[] args)
-  {
+  public void main(String[] args) {
     Predef..MODULE$.println("hello, world");
   }
-  
-  private HelloWorldScala$()
-  {
+  private HelloWorldScala$() {
     MODULE$ = this;
   }
 }

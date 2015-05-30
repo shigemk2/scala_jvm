@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/MethodScala$.class
-  Last modified 2015/05/24; size 789 bytes
-  MD5 checksum f54f9c4f9bf21341320c94a5ec746aef
+  Last modified 2015/05/30; size 608 bytes
+  MD5 checksum 74b5fb28c334184bf5dbd7520f0fc345
   Compiled from "MethodScala.scala"
 public final class MethodScala$
   SourceFile: "MethodScala.scala"
@@ -29,33 +29,18 @@ Constant pool:
   #17 = Utf8               I
   #18 = Utf8               main
   #19 = Utf8               ([Ljava/lang/String;)V
-  #20 = Utf8               scala/Predef$
-  #21 = Class              #20            //  scala/Predef$
-  #22 = Utf8               Lscala/Predef$;
-  #23 = NameAndType        #6:#22         //  MODULE$:Lscala/Predef$;
-  #24 = Fieldref           #21.#23        //  scala/Predef$.MODULE$:Lscala/Predef$;
-  #25 = NameAndType        #13:#14        //  method:(I)I
-  #26 = Methodref          #2.#25         //  MethodScala$.method:(I)I
-  #27 = Utf8               scala/runtime/BoxesRunTime
-  #28 = Class              #27            //  scala/runtime/BoxesRunTime
-  #29 = Utf8               boxToInteger
-  #30 = Utf8               (I)Ljava/lang/Integer;
-  #31 = NameAndType        #29:#30        //  boxToInteger:(I)Ljava/lang/Integer;
-  #32 = Methodref          #28.#31        //  scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-  #33 = Utf8               println
-  #34 = Utf8               (Ljava/lang/Object;)V
-  #35 = NameAndType        #33:#34        //  println:(Ljava/lang/Object;)V
-  #36 = Methodref          #21.#35        //  scala/Predef$.println:(Ljava/lang/Object;)V
-  #37 = Utf8               args
-  #38 = Utf8               [Ljava/lang/String;
-  #39 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #40 = NameAndType        #6:#7          //  MODULE$:LMethodScala$;
-  #41 = Fieldref           #2.#40         //  MethodScala$.MODULE$:LMethodScala$;
-  #42 = Utf8               Code
-  #43 = Utf8               LocalVariableTable
-  #44 = Utf8               LineNumberTable
-  #45 = Utf8               SourceFile
-  #46 = Utf8               Scala
+  #20 = NameAndType        #13:#14        //  method:(I)I
+  #21 = Methodref          #2.#20         //  MethodScala$.method:(I)I
+  #22 = Utf8               args
+  #23 = Utf8               [Ljava/lang/String;
+  #24 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #25 = NameAndType        #6:#7          //  MODULE$:LMethodScala$;
+  #26 = Fieldref           #2.#25         //  MethodScala$.MODULE$:LMethodScala$;
+  #27 = Utf8               Code
+  #28 = Utf8               LocalVariableTable
+  #29 = Utf8               LineNumberTable
+  #30 = Utf8               SourceFile
+  #31 = Utf8               Scala
 {
   public static final MethodScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -73,8 +58,8 @@ Constant pool:
     flags: ACC_PUBLIC
     Code:
       stack=1, locals=2, args_size=2
-         0: iload_1       
-         1: ireturn       
+0: iload_1       
+1: ireturn       
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0       2     0  this   LMethodScala$;
@@ -85,37 +70,35 @@ Constant pool:
   public void main(java.lang.String[]);
     flags: ACC_PUBLIC
     Code:
-      stack=3, locals=3, args_size=2
-         0: iconst_1      
-         1: istore_2      
-         2: getstatic     #24                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-         5: aload_0       
-         6: iload_2       
-         7: invokevirtual #26                 // Method method:(I)I
-        10: invokestatic  #32                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-        13: invokevirtual #36                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-        16: return        
+      stack=2, locals=3, args_size=2
+0: iconst_1      
+1: istore_2      
+2: aload_0       
+3: iload_2       
+4: invokevirtual #21                 // Method method:(I)I
+7: pop           
+8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-               0      17     0  this   LMethodScala$;
-               0      17     1  args   [Ljava/lang/String;
-               2      14     2     a   I
+               0       9     0  this   LMethodScala$;
+               0       9     1  args   [Ljava/lang/String;
+               2       6     2     a   I
       LineNumberTable:
-        line 7: 0
-        line 8: 2
+        line 6: 0
+        line 7: 2
 
   private MethodScala$();
     flags: ACC_PRIVATE
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #39                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #24                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #41                 // Field MODULE$:LMethodScala$;
+         5: putstatic     #26                 // Field MODULE$:LMethodScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0       9     0  this   LMethodScala$;
       LineNumberTable:
-        line 10: 0
+        line 9: 0
 }
