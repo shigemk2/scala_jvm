@@ -1,5 +1,5 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/Trait.class
-  Last modified 2015/05/24; size 445 bytes
+  Last modified 2015/05/30; size 445 bytes
   MD5 checksum 3a4318d5b2440a4f50458646d9543d1f
   Compiled from "TraitScala.scala"
 public interface Trait
