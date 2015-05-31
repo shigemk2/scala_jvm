@@ -1,0 +1,21 @@
+Compiled from "PlusJavaBeta.java"
+class PlusJava {
+  PlusJava();
+    Code:
+       0: aload_0       
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return        
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_1      
+       1: istore_1      
+       2: iload_1       
+       3: iconst_2      
+       4: iadd          
+       5: istore_1      
+       6: iload_1       
+       7: invokestatic  #2                  // Method method:(I)I
+      10: pop           
+      11: return        
+}

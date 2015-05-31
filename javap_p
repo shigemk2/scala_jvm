@@ -1,0 +1,6 @@
+Compiled from "PlusJavaBeta.java"
+class PlusJava {
+  PlusJava();
+  private static int method(int);
+  public static void main(java.lang.String[]);
+}

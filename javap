@@ -1,0 +1,5 @@
+Compiled from "PlusJavaBeta.java"
+class PlusJava {
+  PlusJava();
+  public static void main(java.lang.String[]);
+}
