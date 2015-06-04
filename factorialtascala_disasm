@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/FactorialTAScala$.class
   Last modified 2015/06/04; size 775 bytes
-  MD5 checksum bbf5381846a76649ff5a515c94d1c3c2
+  MD5 checksum 5c19ac739be2903295843df9f146d5cb
   Compiled from "FactorialTAScala.scala"
 public final class FactorialTAScala$
   SourceFile: "FactorialTAScala.scala"
@@ -75,7 +75,7 @@ Constant pool:
                0       7     0  this   LFactorialTAScala$;
                0       7     1     n   I
       LineNumberTable:
-        line 6: 0
+        line 9: 0
 
   public void main(java.lang.String[]);
     flags: ACC_PUBLIC
@@ -91,7 +91,7 @@ Constant pool:
                0       8     0  this   LFactorialTAScala$;
                0       8     1  args   [Ljava/lang/String;
       LineNumberTable:
-        line 10: 0
+        line 13: 0
 
   private final int go$1(int, int);
     flags: ACC_PRIVATE, ACC_FINAL
@@ -117,9 +117,9 @@ Constant pool:
                0      18     1     n   I
                0      18     2   acc   I
       LineNumberTable:
-        line 4: 0
-        line 3: 6
-        line 5: 7
+        line 7: 0
+        line 6: 6
+        line 8: 7
       StackMapTable: number_of_entries = 2
            frame_type = 0 /* same */
            frame_type = 6 /* same */
@@ -138,5 +138,5 @@ Constant pool:
         Start  Length  Slot  Name   Signature
                0       9     0  this   LFactorialTAScala$;
       LineNumberTable:
-        line 12: 0
+        line 15: 0
 }
