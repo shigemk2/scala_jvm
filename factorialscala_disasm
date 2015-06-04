@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/FactorialScala$.class
-  Last modified 2015/05/30; size 830 bytes
-  MD5 checksum 7794c1438ba4d79a8c8a091e09ed45e1
+  Last modified 2015/06/04; size 836 bytes
+  MD5 checksum e26d86287d1e3d63218f528bd557fd95
   Compiled from "FactorialScala.scala"
 public final class FactorialScala$
   SourceFile: "FactorialScala.scala"
@@ -42,17 +42,18 @@ Constant pool:
   #30 = Utf8               I
   #31 = Utf8               main
   #32 = Utf8               ([Ljava/lang/String;)V
-  #33 = Utf8               args
-  #34 = Utf8               [Ljava/lang/String;
-  #35 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #36 = NameAndType        #6:#7          //  MODULE$:LFactorialScala$;
-  #37 = Fieldref           #2.#36         //  FactorialScala$.MODULE$:LFactorialScala$;
-  #38 = Utf8               Code
-  #39 = Utf8               LocalVariableTable
-  #40 = Utf8               LineNumberTable
-  #41 = Utf8               StackMapTable
-  #42 = Utf8               SourceFile
-  #43 = Utf8               Scala
+  #33 = Integer            1000000
+  #34 = Utf8               args
+  #35 = Utf8               [Ljava/lang/String;
+  #36 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #37 = NameAndType        #6:#7          //  MODULE$:LFactorialScala$;
+  #38 = Fieldref           #2.#37         //  FactorialScala$.MODULE$:LFactorialScala$;
+  #39 = Utf8               Code
+  #40 = Utf8               LocalVariableTable
+  #41 = Utf8               LineNumberTable
+  #42 = Utf8               StackMapTable
+  #43 = Utf8               SourceFile
+  #44 = Utf8               Scala
 {
   public static final FactorialScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -70,32 +71,32 @@ Constant pool:
     flags: ACC_PUBLIC
     Code:
       stack=4, locals=3, args_size=2
- 0: iload_1       
- 1: istore_2      
- 2: iload_2       
- 3: tableswitch   { // 0 to 0
-               0: 49
-         default: 20
-    }
-20: iload_2       
-21: iconst_0      
-22: if_icmple     37
-25: iload_2       
-26: aload_0       
-27: iload_2       
-28: iconst_1      
-29: isub          
-30: invokevirtual #16                 // Method fact:(I)I
-33: imul          
-34: goto          50
-37: new           #18                 // class scala/MatchError
-40: dup           
-41: iload_2       
-42: invokestatic  #24                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
-45: invokespecial #27                 // Method scala/MatchError."<init>":(Ljava/lang/Object;)V
-48: athrow        
-49: iconst_1      
-50: ireturn       
+         0: iload_1       
+         1: istore_2      
+         2: iload_2       
+         3: tableswitch   { // 0 to 0
+                       0: 49
+                 default: 20
+            }
+        20: iload_2       
+        21: iconst_0      
+        22: if_icmple     37
+        25: iload_2       
+        26: aload_0       
+        27: iload_2       
+        28: iconst_1      
+        29: isub          
+        30: invokevirtual #16                 // Method fact:(I)I
+        33: imul          
+        34: goto          50
+        37: new           #18                 // class scala/MatchError
+        40: dup           
+        41: iload_2       
+        42: invokestatic  #24                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+        45: invokespecial #27                 // Method scala/MatchError."<init>":(Ljava/lang/Object;)V
+        48: athrow        
+        49: iconst_1      
+        50: ireturn       
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0      51     0  this   LFactorialScala$;
@@ -120,14 +121,14 @@ Constant pool:
     Code:
       stack=2, locals=2, args_size=2
          0: aload_0       
-         1: iconst_5      
-         2: invokevirtual #16                 // Method fact:(I)I
-         5: pop           
-         6: return        
+         1: ldc           #33                 // int 1000000
+         3: invokevirtual #16                 // Method fact:(I)I
+         6: pop           
+         7: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-               0       7     0  this   LFactorialScala$;
-               0       7     1  args   [Ljava/lang/String;
+               0       8     0  this   LFactorialScala$;
+               0       8     1  args   [Ljava/lang/String;
       LineNumberTable:
         line 8: 0
 
@@ -136,9 +137,9 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #36                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #37                 // Field MODULE$:LFactorialScala$;
+         5: putstatic     #38                 // Field MODULE$:LFactorialScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature

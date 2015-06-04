@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/FactorialTAScala$.class
-  Last modified 2015/05/31; size 769 bytes
-  MD5 checksum 78cb69b22771bb54fbb8940f28e529df
+  Last modified 2015/06/04; size 775 bytes
+  MD5 checksum bbf5381846a76649ff5a515c94d1c3c2
   Compiled from "FactorialTAScala.scala"
 public final class FactorialTAScala$
   SourceFile: "FactorialTAScala.scala"
@@ -33,20 +33,21 @@ Constant pool:
   #21 = Utf8               I
   #22 = Utf8               main
   #23 = Utf8               ([Ljava/lang/String;)V
-  #24 = NameAndType        #13:#14        //  fact:(I)I
-  #25 = Methodref          #2.#24         //  FactorialTAScala$.fact:(I)I
-  #26 = Utf8               args
-  #27 = Utf8               [Ljava/lang/String;
-  #28 = Utf8               acc
-  #29 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #30 = NameAndType        #6:#7          //  MODULE$:LFactorialTAScala$;
-  #31 = Fieldref           #2.#30         //  FactorialTAScala$.MODULE$:LFactorialTAScala$;
-  #32 = Utf8               Code
-  #33 = Utf8               LocalVariableTable
-  #34 = Utf8               LineNumberTable
-  #35 = Utf8               StackMapTable
-  #36 = Utf8               SourceFile
-  #37 = Utf8               Scala
+  #24 = Integer            1000000
+  #25 = NameAndType        #13:#14        //  fact:(I)I
+  #26 = Methodref          #2.#25         //  FactorialTAScala$.fact:(I)I
+  #27 = Utf8               args
+  #28 = Utf8               [Ljava/lang/String;
+  #29 = Utf8               acc
+  #30 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #31 = NameAndType        #6:#7          //  MODULE$:LFactorialTAScala$;
+  #32 = Fieldref           #2.#31         //  FactorialTAScala$.MODULE$:LFactorialTAScala$;
+  #33 = Utf8               Code
+  #34 = Utf8               LocalVariableTable
+  #35 = Utf8               LineNumberTable
+  #36 = Utf8               StackMapTable
+  #37 = Utf8               SourceFile
+  #38 = Utf8               Scala
 {
   public static final FactorialTAScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -64,11 +65,11 @@ Constant pool:
     flags: ACC_PUBLIC
     Code:
       stack=3, locals=2, args_size=2
-0: aload_0       
-1: iload_1       
-2: iconst_1      
-3: invokespecial #18                 // Method go$1:(II)I
-6: ireturn       
+         0: aload_0       
+         1: iload_1       
+         2: iconst_1      
+         3: invokespecial #18                 // Method go$1:(II)I
+         6: ireturn       
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0       7     0  this   LFactorialTAScala$;
@@ -81,14 +82,14 @@ Constant pool:
     Code:
       stack=2, locals=2, args_size=2
          0: aload_0       
-         1: iconst_5      
-         2: invokevirtual #25                 // Method fact:(I)I
-         5: pop           
-         6: return        
+         1: ldc           #24                 // int 1000000
+         3: invokevirtual #26                 // Method fact:(I)I
+         6: pop           
+         7: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-               0       7     0  this   LFactorialTAScala$;
-               0       7     1  args   [Ljava/lang/String;
+               0       8     0  this   LFactorialTAScala$;
+               0       8     1  args   [Ljava/lang/String;
       LineNumberTable:
         line 10: 0
 
@@ -129,9 +130,9 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #29                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #30                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #31                 // Field MODULE$:LFactorialTAScala$;
+         5: putstatic     #32                 // Field MODULE$:LFactorialTAScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
