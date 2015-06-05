@@ -1,0 +1,114 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/ListScala$.class
+  Last modified 2015/06/05; size 787 bytes
+  MD5 checksum fa53cf2a8f228e330eb7df8472749564
+  Compiled from "ListScala.scala"
+public final class ListScala$
+  SourceFile: "ListScala.scala"
+    Scala: length = 0x0
+     
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               ListScala$
+   #2 = Class              #1             //  ListScala$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             //  java/lang/Object
+   #5 = Utf8               ListScala.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LListScala$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         //  "<init>":()V
+  #12 = Methodref          #2.#11         //  ListScala$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               scala/collection/immutable/List$
+  #16 = Class              #15            //  scala/collection/immutable/List$
+  #17 = Utf8               Lscala/collection/immutable/List$;
+  #18 = NameAndType        #6:#17         //  MODULE$:Lscala/collection/immutable/List$;
+  #19 = Fieldref           #16.#18        //  scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
+  #20 = Utf8               scala/Predef$
+  #21 = Class              #20            //  scala/Predef$
+  #22 = Utf8               Lscala/Predef$;
+  #23 = NameAndType        #6:#22         //  MODULE$:Lscala/Predef$;
+  #24 = Fieldref           #21.#23        //  scala/Predef$.MODULE$:Lscala/Predef$;
+  #25 = Utf8               wrapIntArray
+  #26 = Utf8               ([I)Lscala/collection/mutable/WrappedArray;
+  #27 = NameAndType        #25:#26        //  wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
+  #28 = Methodref          #21.#27        //  scala/Predef$.wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
+  #29 = Utf8               apply
+  #30 = Utf8               (Lscala/collection/Seq;)Lscala/collection/immutable/List;
+  #31 = NameAndType        #29:#30        //  apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
+  #32 = Methodref          #16.#31        //  scala/collection/immutable/List$.apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
+  #33 = Utf8               this
+  #34 = Utf8               args
+  #35 = Utf8               [Ljava/lang/String;
+  #36 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #37 = NameAndType        #6:#7          //  MODULE$:LListScala$;
+  #38 = Fieldref           #2.#37         //  ListScala$.MODULE$:LListScala$;
+  #39 = Utf8               Code
+  #40 = Utf8               LocalVariableTable
+  #41 = Utf8               LineNumberTable
+  #42 = Utf8               SourceFile
+  #43 = Utf8               Scala
+{
+  public static final ListScala$ MODULE$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+
+  public static {};
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class ListScala$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return        
+
+  public void main(java.lang.String[]);
+    flags: ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=2
+         0: getstatic     #19                 // Field scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
+         3: getstatic     #24                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+         6: iconst_3      
+         7: newarray       int
+         9: dup           
+        10: iconst_0      
+        11: iconst_1      
+        12: iastore       
+        13: dup           
+        14: iconst_1      
+        15: iconst_2      
+        16: iastore       
+        17: dup           
+        18: iconst_2      
+        19: iconst_3      
+        20: iastore       
+        21: invokevirtual #28                 // Method scala/Predef$.wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
+        24: invokevirtual #32                 // Method scala/collection/immutable/List$.apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
+        27: pop           
+        28: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0      29     0  this   LListScala$;
+               0      29     1  args   [Ljava/lang/String;
+      LineNumberTable:
+        line 3: 0
+
+  private ListScala$();
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #36                 // Method java/lang/Object."<init>":()V
+         4: aload_0       
+         5: putstatic     #38                 // Field MODULE$:LListScala$;
+         8: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       9     0  this   LListScala$;
+      LineNumberTable:
+        line 5: 0
+}
