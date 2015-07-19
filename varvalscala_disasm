@@ -1,0 +1,90 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/VarValScala$.class
+  Last modified 2015/07/19; size 562 bytes
+  MD5 checksum 08fecb1d9ab7f03c84dcf579aa1d4615
+  Compiled from "VarValScala.scala"
+public final class VarValScala$
+  SourceFile: "VarValScala.scala"
+    ScalaInlineInfo: length = 0xE
+     01 01 00 02 00 0A 00 09 01 00 0D 00 0E 01 
+    Scala: length = 0x0
+     
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               VarValScala$
+   #2 = Class              #1             //  VarValScala$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             //  java/lang/Object
+   #5 = Utf8               VarValScala.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LVarValScala$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         //  "<init>":()V
+  #12 = Methodref          #2.#11         //  VarValScala$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               this
+  #16 = Utf8               args
+  #17 = Utf8               [Ljava/lang/String;
+  #18 = Utf8               a
+  #19 = Utf8               I
+  #20 = Utf8               b
+  #21 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #22 = NameAndType        #6:#7          //  MODULE$:LVarValScala$;
+  #23 = Fieldref           #2.#22         //  VarValScala$.MODULE$:LVarValScala$;
+  #24 = Utf8               Code
+  #25 = Utf8               LocalVariableTable
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               SourceFile
+  #28 = Utf8               ScalaInlineInfo
+  #29 = Utf8               Scala
+{
+  public static final VarValScala$ MODULE$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+
+  public static {};
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class VarValScala$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return        
+
+  public void main(java.lang.String[]);
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=4, args_size=2
+         0: iconst_1      
+         1: istore_2      
+         2: iconst_1      
+         3: istore_3      
+         4: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       5     0  this   LVarValScala$;
+               0       5     1  args   [Ljava/lang/String;
+               2       2     2     a   I
+               4       0     3     b   I
+      LineNumberTable:
+        line 3: 0
+        line 4: 2
+
+  private VarValScala$();
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+         4: aload_0       
+         5: putstatic     #23                 // Field MODULE$:LVarValScala$;
+         8: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       9     0  this   LVarValScala$;
+      LineNumberTable:
+        line 6: 0
+}
