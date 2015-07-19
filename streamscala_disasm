@@ -1,0 +1,115 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/StreamScala$.class
+  Last modified 2015/07/19; size 910 bytes
+  MD5 checksum e5a7aff1630645e8abd70cf4a8c6962d
+  Compiled from "StreamScala.scala"
+public final class StreamScala$
+  SourceFile: "StreamScala.scala"
+    ScalaInlineInfo: length = 0xE
+     01 01 00 02 00 0A 00 09 01 00 0D 00 0E 01 
+    Scala: length = 0x0
+     
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               StreamScala$
+   #2 = Class              #1             //  StreamScala$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             //  java/lang/Object
+   #5 = Utf8               StreamScala.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LStreamScala$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         //  "<init>":()V
+  #12 = Methodref          #2.#11         //  StreamScala$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               scala/package$
+  #16 = Class              #15            //  scala/package$
+  #17 = Utf8               Lscala/package$;
+  #18 = NameAndType        #6:#17         //  MODULE$:Lscala/package$;
+  #19 = Fieldref           #16.#18        //  scala/package$.MODULE$:Lscala/package$;
+  #20 = Utf8               Stream
+  #21 = Utf8               ()Lscala/collection/immutable/Stream$;
+  #22 = NameAndType        #20:#21        //  Stream:()Lscala/collection/immutable/Stream$;
+  #23 = Methodref          #16.#22        //  scala/package$.Stream:()Lscala/collection/immutable/Stream$;
+  #24 = Utf8               scala/collection/immutable/Stream$
+  #25 = Class              #24            //  scala/collection/immutable/Stream$
+  #26 = Utf8               from
+  #27 = Utf8               (I)Lscala/collection/immutable/Stream;
+  #28 = NameAndType        #26:#27        //  from:(I)Lscala/collection/immutable/Stream;
+  #29 = Methodref          #25.#28        //  scala/collection/immutable/Stream$.from:(I)Lscala/collection/immutable/Stream;
+  #30 = Utf8               scala/collection/immutable/Stream
+  #31 = Class              #30            //  scala/collection/immutable/Stream
+  #32 = Utf8               take
+  #33 = NameAndType        #32:#27        //  take:(I)Lscala/collection/immutable/Stream;
+  #34 = Methodref          #31.#33        //  scala/collection/immutable/Stream.take:(I)Lscala/collection/immutable/Stream;
+  #35 = Utf8               toList
+  #36 = Utf8               ()Lscala/collection/immutable/List;
+  #37 = NameAndType        #35:#36        //  toList:()Lscala/collection/immutable/List;
+  #38 = Methodref          #31.#37        //  scala/collection/immutable/Stream.toList:()Lscala/collection/immutable/List;
+  #39 = Utf8               this
+  #40 = Utf8               args
+  #41 = Utf8               [Ljava/lang/String;
+  #42 = Utf8               a
+  #43 = Utf8               Lscala/collection/immutable/List;
+  #44 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #45 = NameAndType        #6:#7          //  MODULE$:LStreamScala$;
+  #46 = Fieldref           #2.#45         //  StreamScala$.MODULE$:LStreamScala$;
+  #47 = Utf8               Code
+  #48 = Utf8               LocalVariableTable
+  #49 = Utf8               LineNumberTable
+  #50 = Utf8               SourceFile
+  #51 = Utf8               ScalaInlineInfo
+  #52 = Utf8               Scala
+{
+  public static final StreamScala$ MODULE$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+
+  public static {};
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class StreamScala$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return        
+
+  public void main(java.lang.String[]);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: getstatic     #19                 // Field scala/package$.MODULE$:Lscala/package$;
+         3: invokevirtual #23                 // Method scala/package$.Stream:()Lscala/collection/immutable/Stream$;
+         6: iconst_1      
+         7: invokevirtual #29                 // Method scala/collection/immutable/Stream$.from:(I)Lscala/collection/immutable/Stream;
+        10: iconst_3      
+        11: invokevirtual #34                 // Method scala/collection/immutable/Stream.take:(I)Lscala/collection/immutable/Stream;
+        14: invokevirtual #38                 // Method scala/collection/immutable/Stream.toList:()Lscala/collection/immutable/List;
+        17: astore_2      
+        18: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0      19     0  this   LStreamScala$;
+               0      19     1  args   [Ljava/lang/String;
+              18       0     2     a   Lscala/collection/immutable/List;
+      LineNumberTable:
+        line 3: 0
+
+  private StreamScala$();
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+         4: aload_0       
+         5: putstatic     #46                 // Field MODULE$:LStreamScala$;
+         8: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       9     0  this   LStreamScala$;
+      LineNumberTable:
+        line 5: 0
+}
