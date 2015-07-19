@@ -1,9 +1,11 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/ListScala$.class
-  Last modified 2015/06/05; size 787 bytes
-  MD5 checksum fa53cf2a8f228e330eb7df8472749564
+  Last modified 2015/07/19; size 875 bytes
+  MD5 checksum e82005b2dd724ecb9c184782dca92e03
   Compiled from "ListScala.scala"
 public final class ListScala$
   SourceFile: "ListScala.scala"
+    ScalaInlineInfo: length = 0xE
+     01 01 00 02 00 0A 00 09 01 00 0D 00 0E 01 
     Scala: length = 0x0
      
   minor version: 0
@@ -45,14 +47,17 @@ Constant pool:
   #33 = Utf8               this
   #34 = Utf8               args
   #35 = Utf8               [Ljava/lang/String;
-  #36 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #37 = NameAndType        #6:#7          //  MODULE$:LListScala$;
-  #38 = Fieldref           #2.#37         //  ListScala$.MODULE$:LListScala$;
-  #39 = Utf8               Code
-  #40 = Utf8               LocalVariableTable
-  #41 = Utf8               LineNumberTable
-  #42 = Utf8               SourceFile
-  #43 = Utf8               Scala
+  #36 = Utf8               a
+  #37 = Utf8               Lscala/collection/immutable/List;
+  #38 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #39 = NameAndType        #6:#7          //  MODULE$:LListScala$;
+  #40 = Fieldref           #2.#39         //  ListScala$.MODULE$:LListScala$;
+  #41 = Utf8               Code
+  #42 = Utf8               LocalVariableTable
+  #43 = Utf8               LineNumberTable
+  #44 = Utf8               SourceFile
+  #45 = Utf8               ScalaInlineInfo
+  #46 = Utf8               Scala
 {
   public static final ListScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -69,7 +74,7 @@ Constant pool:
   public void main(java.lang.String[]);
     flags: ACC_PUBLIC
     Code:
-      stack=6, locals=2, args_size=2
+      stack=6, locals=3, args_size=2
          0: getstatic     #19                 // Field scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
          3: getstatic     #24                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
          6: iconst_3      
@@ -88,12 +93,13 @@ Constant pool:
         20: iastore       
         21: invokevirtual #28                 // Method scala/Predef$.wrapIntArray:([I)Lscala/collection/mutable/WrappedArray;
         24: invokevirtual #32                 // Method scala/collection/immutable/List$.apply:(Lscala/collection/Seq;)Lscala/collection/immutable/List;
-        27: pop           
+        27: astore_2      
         28: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0      29     0  this   LListScala$;
                0      29     1  args   [Ljava/lang/String;
+              28       0     2     a   Lscala/collection/immutable/List;
       LineNumberTable:
         line 3: 0
 
@@ -102,9 +108,9 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #36                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #38                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #38                 // Field MODULE$:LListScala$;
+         5: putstatic     #40                 // Field MODULE$:LListScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
