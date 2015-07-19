@@ -1,6 +1,6 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/StreamScala$.class
-  Last modified 2015/07/19; size 910 bytes
-  MD5 checksum e5a7aff1630645e8abd70cf4a8c6962d
+  Last modified 2015/07/19; size 852 bytes
+  MD5 checksum 984d0c6f4ecec87b2fb172ca773d6004
   Compiled from "StreamScala.scala"
 public final class StreamScala$
   SourceFile: "StreamScala.scala"
@@ -46,24 +46,20 @@ Constant pool:
   #32 = Utf8               take
   #33 = NameAndType        #32:#27        //  take:(I)Lscala/collection/immutable/Stream;
   #34 = Methodref          #31.#33        //  scala/collection/immutable/Stream.take:(I)Lscala/collection/immutable/Stream;
-  #35 = Utf8               toList
-  #36 = Utf8               ()Lscala/collection/immutable/List;
-  #37 = NameAndType        #35:#36        //  toList:()Lscala/collection/immutable/List;
-  #38 = Methodref          #31.#37        //  scala/collection/immutable/Stream.toList:()Lscala/collection/immutable/List;
-  #39 = Utf8               this
-  #40 = Utf8               args
-  #41 = Utf8               [Ljava/lang/String;
-  #42 = Utf8               a
-  #43 = Utf8               Lscala/collection/immutable/List;
-  #44 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #45 = NameAndType        #6:#7          //  MODULE$:LStreamScala$;
-  #46 = Fieldref           #2.#45         //  StreamScala$.MODULE$:LStreamScala$;
-  #47 = Utf8               Code
-  #48 = Utf8               LocalVariableTable
-  #49 = Utf8               LineNumberTable
-  #50 = Utf8               SourceFile
-  #51 = Utf8               ScalaInlineInfo
-  #52 = Utf8               Scala
+  #35 = Utf8               this
+  #36 = Utf8               args
+  #37 = Utf8               [Ljava/lang/String;
+  #38 = Utf8               a
+  #39 = Utf8               Lscala/collection/immutable/Stream;
+  #40 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #41 = NameAndType        #6:#7          //  MODULE$:LStreamScala$;
+  #42 = Fieldref           #2.#41         //  StreamScala$.MODULE$:LStreamScala$;
+  #43 = Utf8               Code
+  #44 = Utf8               LocalVariableTable
+  #45 = Utf8               LineNumberTable
+  #46 = Utf8               SourceFile
+  #47 = Utf8               ScalaInlineInfo
+  #48 = Utf8               Scala
 {
   public static final StreamScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -87,14 +83,13 @@ Constant pool:
          7: invokevirtual #29                 // Method scala/collection/immutable/Stream$.from:(I)Lscala/collection/immutable/Stream;
         10: iconst_3      
         11: invokevirtual #34                 // Method scala/collection/immutable/Stream.take:(I)Lscala/collection/immutable/Stream;
-        14: invokevirtual #38                 // Method scala/collection/immutable/Stream.toList:()Lscala/collection/immutable/List;
-        17: astore_2      
-        18: return        
+        14: astore_2      
+        15: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-               0      19     0  this   LStreamScala$;
-               0      19     1  args   [Ljava/lang/String;
-              18       0     2     a   Lscala/collection/immutable/List;
+               0      16     0  this   LStreamScala$;
+               0      16     1  args   [Ljava/lang/String;
+              15       0     2     a   Lscala/collection/immutable/Stream;
       LineNumberTable:
         line 3: 0
 
@@ -103,9 +98,9 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #40                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #46                 // Field MODULE$:LStreamScala$;
+         5: putstatic     #42                 // Field MODULE$:LStreamScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
