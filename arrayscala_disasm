@@ -1,9 +1,11 @@
 Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/ArrayScala$.class
-  Last modified 2015/06/05; size 497 bytes
-  MD5 checksum c2d3a180ef4e8bd1335d07ae90fca102
+  Last modified 2015/07/19; size 554 bytes
+  MD5 checksum 249aa66eba4b1ba65f575e0d380af30e
   Compiled from "ArrayScala.scala"
 public final class ArrayScala$
   SourceFile: "ArrayScala.scala"
+    ScalaInlineInfo: length = 0xE
+     01 01 00 02 00 0A 00 09 01 00 0D 00 0E 01 
     Scala: length = 0x0
      
   minor version: 0
@@ -27,14 +29,17 @@ Constant pool:
   #15 = Utf8               this
   #16 = Utf8               args
   #17 = Utf8               [Ljava/lang/String;
-  #18 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
-  #19 = NameAndType        #6:#7          //  MODULE$:LArrayScala$;
-  #20 = Fieldref           #2.#19         //  ArrayScala$.MODULE$:LArrayScala$;
-  #21 = Utf8               Code
-  #22 = Utf8               LocalVariableTable
-  #23 = Utf8               LineNumberTable
-  #24 = Utf8               SourceFile
-  #25 = Utf8               Scala
+  #18 = Utf8               a
+  #19 = Utf8               [I
+  #20 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #21 = NameAndType        #6:#7          //  MODULE$:LArrayScala$;
+  #22 = Fieldref           #2.#21         //  ArrayScala$.MODULE$:LArrayScala$;
+  #23 = Utf8               Code
+  #24 = Utf8               LocalVariableTable
+  #25 = Utf8               LineNumberTable
+  #26 = Utf8               SourceFile
+  #27 = Utf8               ScalaInlineInfo
+  #28 = Utf8               Scala
 {
   public static final ArrayScala$ MODULE$;
     flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
@@ -51,7 +56,7 @@ Constant pool:
   public void main(java.lang.String[]);
     flags: ACC_PUBLIC
     Code:
-      stack=4, locals=2, args_size=2
+      stack=4, locals=3, args_size=2
          0: iconst_3      
          1: newarray       int
          3: dup           
@@ -66,12 +71,13 @@ Constant pool:
         12: iconst_2      
         13: iconst_3      
         14: iastore       
-        15: pop           
+        15: astore_2      
         16: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
                0      17     0  this   LArrayScala$;
                0      17     1  args   [Ljava/lang/String;
+              16       0     2     a   [I
       LineNumberTable:
         line 3: 0
 
@@ -80,9 +86,9 @@ Constant pool:
     Code:
       stack=1, locals=1, args_size=1
          0: aload_0       
-         1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+         1: invokespecial #20                 // Method java/lang/Object."<init>":()V
          4: aload_0       
-         5: putstatic     #20                 // Field MODULE$:LArrayScala$;
+         5: putstatic     #22                 // Field MODULE$:LArrayScala$;
          8: return        
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
