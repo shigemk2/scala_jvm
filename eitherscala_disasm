@@ -1,0 +1,125 @@
+Classfile /home/shigemk2/projects/github.com/shigemk2/scala_jvm/EitherScala$.class
+  Last modified 2015/07/25; size 925 bytes
+  MD5 checksum 3468c01e735c66cdef0f6d7945ba7e2a
+  Compiled from "EitherScala.scala"
+public final class EitherScala$
+  SourceFile: "EitherScala.scala"
+    ScalaInlineInfo: length = 0xE
+     01 01 00 02 00 0A 00 09 01 00 0D 00 0E 01 
+    Scala: length = 0x0
+     
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               EitherScala$
+   #2 = Class              #1             //  EitherScala$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             //  java/lang/Object
+   #5 = Utf8               EitherScala.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               LEitherScala$;
+   #8 = Utf8               <clinit>
+   #9 = Utf8               ()V
+  #10 = Utf8               <init>
+  #11 = NameAndType        #10:#9         //  "<init>":()V
+  #12 = Methodref          #2.#11         //  EitherScala$."<init>":()V
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               scala/package$
+  #16 = Class              #15            //  scala/package$
+  #17 = Utf8               Lscala/package$;
+  #18 = NameAndType        #6:#17         //  MODULE$:Lscala/package$;
+  #19 = Fieldref           #16.#18        //  scala/package$.MODULE$:Lscala/package$;
+  #20 = Utf8               Right
+  #21 = Utf8               ()Lscala/util/Right$;
+  #22 = NameAndType        #20:#21        //  Right:()Lscala/util/Right$;
+  #23 = Methodref          #16.#22        //  scala/package$.Right:()Lscala/util/Right$;
+  #24 = Utf8               test
+  #25 = String             #24            //  test
+  #26 = Utf8               scala/util/Right$
+  #27 = Class              #26            //  scala/util/Right$
+  #28 = Utf8               apply
+  #29 = Utf8               (Ljava/lang/Object;)Lscala/util/Right;
+  #30 = NameAndType        #28:#29        //  apply:(Ljava/lang/Object;)Lscala/util/Right;
+  #31 = Methodref          #27.#30        //  scala/util/Right$.apply:(Ljava/lang/Object;)Lscala/util/Right;
+  #32 = Utf8               Left
+  #33 = Utf8               ()Lscala/util/Left$;
+  #34 = NameAndType        #32:#33        //  Left:()Lscala/util/Left$;
+  #35 = Methodref          #16.#34        //  scala/package$.Left:()Lscala/util/Left$;
+  #36 = Utf8               error
+  #37 = String             #36            //  error
+  #38 = Utf8               scala/util/Left$
+  #39 = Class              #38            //  scala/util/Left$
+  #40 = Utf8               (Ljava/lang/Object;)Lscala/util/Left;
+  #41 = NameAndType        #28:#40        //  apply:(Ljava/lang/Object;)Lscala/util/Left;
+  #42 = Methodref          #39.#41        //  scala/util/Left$.apply:(Ljava/lang/Object;)Lscala/util/Left;
+  #43 = Utf8               this
+  #44 = Utf8               args
+  #45 = Utf8               [Ljava/lang/String;
+  #46 = Utf8               a
+  #47 = Utf8               Lscala/util/Right;
+  #48 = Utf8               b
+  #49 = Utf8               Lscala/util/Left;
+  #50 = Methodref          #4.#11         //  java/lang/Object."<init>":()V
+  #51 = NameAndType        #6:#7          //  MODULE$:LEitherScala$;
+  #52 = Fieldref           #2.#51         //  EitherScala$.MODULE$:LEitherScala$;
+  #53 = Utf8               Code
+  #54 = Utf8               LocalVariableTable
+  #55 = Utf8               LineNumberTable
+  #56 = Utf8               SourceFile
+  #57 = Utf8               ScalaInlineInfo
+  #58 = Utf8               Scala
+{
+  public static final EitherScala$ MODULE$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+
+  public static {};
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: new           #2                  // class EitherScala$
+         3: invokespecial #12                 // Method "<init>":()V
+         6: return        
+
+  public void main(java.lang.String[]);
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=2
+         0: getstatic     #19                 // Field scala/package$.MODULE$:Lscala/package$;
+         3: invokevirtual #23                 // Method scala/package$.Right:()Lscala/util/Right$;
+         6: ldc           #25                 // String test
+         8: invokevirtual #31                 // Method scala/util/Right$.apply:(Ljava/lang/Object;)Lscala/util/Right;
+        11: astore_2      
+        12: getstatic     #19                 // Field scala/package$.MODULE$:Lscala/package$;
+        15: invokevirtual #35                 // Method scala/package$.Left:()Lscala/util/Left$;
+        18: ldc           #37                 // String error
+        20: invokevirtual #42                 // Method scala/util/Left$.apply:(Ljava/lang/Object;)Lscala/util/Left;
+        23: astore_3      
+        24: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0      25     0  this   LEitherScala$;
+               0      25     1  args   [Ljava/lang/String;
+              12      12     2     a   Lscala/util/Right;
+              24       0     3     b   Lscala/util/Left;
+      LineNumberTable:
+        line 3: 0
+        line 4: 12
+
+  private EitherScala$();
+    flags: ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #50                 // Method java/lang/Object."<init>":()V
+         4: aload_0       
+         5: putstatic     #52                 // Field MODULE$:LEitherScala$;
+         8: return        
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+               0       9     0  this   LEitherScala$;
+      LineNumberTable:
+        line 6: 0
+}
